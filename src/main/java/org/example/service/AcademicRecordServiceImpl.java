@@ -17,7 +17,7 @@ public class AcademicRecordServiceImpl implements AcademicRecordService {
 
   @Override
   public Double calculateAverage() {
-    double sum, average = 0;
+    double average;
     List<Grade> gradeList = this.gradeRepository.findAllGrades();
     average = sumNumberOfGrades() / gradeList.size();
 
